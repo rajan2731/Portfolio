@@ -80,8 +80,6 @@ nav li:hover {
     font-weight: 700;
 }
 
-
-
 #hero {
     background: var(--dark-color);
     padding: 4rem 0;
@@ -95,28 +93,15 @@ nav li:hover {
     flex-wrap: wrap;
 }
 
-.hi_text{
-    font-size: 50px;
-}
-
-#hero .container img {
-    height: auto;
-    max-width: 100%;
-}
-
-#hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
 .hi_text {
     font-size: 6rem;
     font-weight: bold;
     color: var(--secondary-color);
 }
 
-.name_text {
-    font-size: 5rem;
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 #hero h2 {
@@ -139,74 +124,46 @@ nav li:hover {
     50% { border-color: orange; }
 }
 
-main{
+main {
     background-color: #0089b7;
 }
 
-
-
-#about {
-    width: 500px; ;
-    height:424px ;
-    margin-top: 5px;
-    background-color: #003d62; ;
-
+#about, #skill {
+    background-color: #003d62;
+    padding: 2rem 0;
 }
 
-#about h2{
+#about h2, #skill h2 {
     font-size: 6rem;
     text-align: center;
     padding: 2rem 0;
 }
 
-#about p{
+#about p {
     font-size: 2.5rem;
     text-align: center;
-    padding: 2rem 0;
-    margin-right: 13px;
-}
-
-
-
-#skill {
-    width: 1440px; ;
-    height:424px ;
-    margin-top: 5px;
-    background-color: #003d62; ;
-}
-
-#skill h2 {
-    font-size: 6rem;
-    text-align: center;
-    padding: 2rem 0;
+    margin: 0 13px;
 }
 
 .skills {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            margin-left: 200px;
-        }
-        .skills li {
-            text-align: center;
-            list-style-type: none;
-            background-color: #f0f0f0;
-            font-size:20px;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
-            width: 200px;
-            color: black;
-        }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 0 200px;
+}
 
-
-
-
-
+.skills li {
+    text-align: center;
+    background-color: #f0f0f0;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
 
 #project {
     background: var(--darker-color);
-    margin-top: 5px;
+    padding: 2rem 0;
 }
 
 #project h2 {
@@ -221,13 +178,8 @@ main{
     gap: 2rem;
 }
 
-.grid_item {
-    display: grid;
-    place-items: center;
-}
-
 .card {
-    width: 100%; 
+    width: 100%;
     max-width: 320px;
     display: flex;
     flex-direction: column;
@@ -238,39 +190,33 @@ main{
 
 .card:hover .card_content {
     background: white;
-    color:var(--dark-color);
+    color: var(--dark-color);
     transform: translateY(0px);
 }
 
 .card:hover img {
     transform: scale(1.05);
-    transition: 0.3s ease-in-out;
     opacity: 0.8;
 }
 
 .card_content {
     padding: 2rem;
     position: relative;
-    top:-6.5rem;
-    margin-bottom: -6.5rem;
     transition: 0.5s ease-in-out;
     transform: translateY(1000px);
-    
 }
-.card_content h3{
+
+.card_content h3 {
     text-align: center;
 }
-.card img{
+
+.card img {
     height: 300px;
 }
 
-
-
-
 #contact {
     background: var(--dark-color);
-    margin-top: 5px;
-
+    padding: 2rem 0;
 }
 
 #contact h2 {
@@ -307,8 +253,6 @@ main{
     margin-left: 1rem;
 }
 
-
-
 footer {
     background: var(--darker-color);
     padding: 2rem;
@@ -317,9 +261,29 @@ footer {
     text-align: center;
 }
 
-
 @media (max-width: 768px) {
-    html { font-size: 52%; }
-    nav li { font-size: 1.6rem;
+    html {
+        font-size: 52%;
     }
-  }
+    
+    nav li {
+        font-size: 1.6rem;
+    }
+    
+    .skills {
+        margin-left: 0;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .hi_text, #about h2, #skill h2, #project h2, #contact h2 {
+        font-size: 4rem; 
+    }
+    
+    #about p {
+        font-size: 2rem;
+    }
+    
+    .card {
+        max-width: 90%; 
+    }
+}
