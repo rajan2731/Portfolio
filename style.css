@@ -137,6 +137,67 @@ nav li:hover {
     50% { border-color: orange; }
 }
 
+main{
+    background-color: #0089b7;
+}
+
+
+
+#about {
+    width: 1440px; ;
+    height:424px ;
+    margin-top: 5px;
+    background-color: #003d62; ;
+
+}
+
+#about h2{
+    font-size: 6rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#about p{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem 0;
+    margin-right: 13px;
+}
+
+
+
+#skill {
+    width: 1440px; ;
+    height:424px ;
+    margin-top: 5px;
+    background-color: #003d62; ;
+}
+#skill h2 {
+    font-size: 6rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.skills {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-left: 200px;
+        }
+        .skills li {
+            text-align: center;
+            list-style-type: none;
+            background-color: #f0f0f0;
+            font-size:20px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: 200px;
+            color: black;
+        }
+
+
+
 #project {
     background: var(--darker-color);
 }
