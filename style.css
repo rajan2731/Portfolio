@@ -34,7 +34,7 @@ img{
 }
 /* Container */
 .container {
-    max-width: 100%px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -207,4 +207,17 @@ main {
 
 .card:hover img {
     transform: scale(1.05);
+
+
+
+
+    @media (max-width: 768px) {
+    .skills {
+        margin: 0 10px; /* Reduce margins on smaller screens */
+    }
+    .card {
+        margin-left: 0; /* Remove margin for cards */
+    }
+}
+
    
