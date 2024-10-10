@@ -28,10 +28,12 @@ body {
     font-size: 1.4rem;
     overflow-x: hidden; 
 }
-img{
-    max-width:100%;
-    height:auto;
+
+img {
+    max-width: 100%;
+    height: auto;
 }
+
 /* Container */
 .container {
     max-width: 100%;
@@ -196,7 +198,7 @@ main {
     border-radius: 0.5rem;
     overflow: hidden;
     transition: 0.2s ease-in-out;
-    margin-left: 130px;
+    margin: 0 auto; /* Center card on smaller screens */
 }
 
 .card:hover .card_content {
@@ -207,17 +209,34 @@ main {
 
 .card:hover img {
     transform: scale(1.05);
-
-
-
-
-    @media (max-width: 768px) {
-    .skills {
-        margin: 0 10px; /* Reduce margins on smaller screens */
-    }
-    .card {
-        margin-left: 0; /* Remove margin for cards */
-    }
 }
 
-   
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 10px; /* Reduce margins on smaller screens */
+    }
+    
+    #about h2, #skill h2 {
+        font-size: 4rem; /* Smaller font size for headers */
+    }
+
+    .card {
+        max-width: 100%; /* Allow cards to take full width */
+        margin-left: 0; /* Remove left margin for cards */
+    }
+
+    #hero .container {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center;
+    }
+
+    .hi_text {
+        font-size: 4rem; /* Reduce font size for mobile */
+    }
+
+    nav li {
+        font-size: 1.5rem; /* Smaller nav items */
+    }
+}
