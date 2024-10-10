@@ -28,10 +28,13 @@ body {
     font-size: 1.4rem;
     overflow-x: hidden; 
 }
-
+img{
+    max-width:100%;
+    height:auto;
+}
 /* Container */
 .container {
-    max-width: 1300px;
+    max-width: 100%px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -181,8 +184,7 @@ main {
 
 .project_container {
     display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 }
 
